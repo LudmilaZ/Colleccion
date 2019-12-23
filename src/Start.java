@@ -10,7 +10,7 @@ public class Start {
         List<String> list  = Arrays.asList(a.split(" "));
         for (String pair: list){
             if (myMapStr.containsKey(pair)){
-                myMapStr.put(pair,myMapStr.get(pair).byteValue()+1);
+                myMapStr.put(pair,myMapStr.get(pair).intValue()+1);
             }
             else{
                 myMapStr.put(pair,1);
